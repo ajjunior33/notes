@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  --primary: #e74c3c;
+  --black: #2c3e50;
+  --white: #ecf0f1;
+  --gray: #ccc;
+  --secondary: #2980b9;
+  --success: #27ae60;
+  --warning: #f1c40f;
+}
+
+/*Buttons*/
+.button {
+  border: 0;
+  padding: 10px 12px;
+  font-weight: bold;
+  color: var(--black);
+  background-color: var(--gray);
+  transition: 500ms;
+  border-radius: 8px;
+  margin:3px 5px;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.button:hover {
+  filter: brightness(90%);
+}
+
+.button_classic {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+.button_save {
+  background-color: var(--success);
+  color: var(--white);
+}
+.button_error{
+  background-color:var(--primary);
+  color:var(--white)
+}
+.button_warning{
+  background-color:var(--warning);
+  color:var(--black);
+}
+
+/* FORM */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+input.form-control {
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 3px;
+  border: 1px solid var(--black);
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+}
+
+textarea.form-control {
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 3px;
+  border: 1px solid var(--black);
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  min-height: 300px;
+  margin-bottom: 15px;
+}
+footer {
+  background-color: var(--primary);
+  padding: 10px 15px;
+  color: var(--white);
+}
+/*Text*/
+.text-white {
+  color: var(--white);
+}
+
+
+.text-center{
+  text-align: center;
+}
